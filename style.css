@@ -105,7 +105,74 @@ nav{
 }
 
 #page1 video{
+    position: relative;
     width: 100%;
     border-radius: 30px;
     margin-top: 4vw;
+}
+
+/* background animation */
+
+#hero-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    background-color: #FE330A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 65vh;
+    filter: blur(20px);
+}
+
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE330A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+}
+
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE330A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation: anime2 3s linear infinite alternate;
+}
+
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE330A,#FE330A);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation: anime1 5s linear infinite alternate;
+}
+
+/* animation for background animation */
+
+@keyframes anime1 {
+    from{
+        transform: translate(55%, -3%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from{
+        transform: translate(5%, -5%);
+    }
+    to{
+        transform: translate(-20%, 30%);
+    }
 }
